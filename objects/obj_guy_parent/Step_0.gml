@@ -1,5 +1,10 @@
-// Horizontal movement
-x = x + move_randomly;
+// Horizontal movement (only if not hit)
+if (sprite_index != spr_beam_hit) {
+
+	x = x + move_randomly;
+
+}
+
 
 
 // Vertical movement + collision w. ground
