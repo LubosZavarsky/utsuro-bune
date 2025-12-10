@@ -1,13 +1,4 @@
 switch(room){
-	case rm_game:
-		draw_text(20,20,"SCORE: "+string(score));
-		//draw_text(20,40,"LIVES: "+string(lives));
-		
-		for (var _i = 0; _i < lives; _i++) {
-			draw_sprite(spr_heart, 0, 30 + 24*_i, 55)
-		}
-		
-		break;
 	
 //	case rm_start:
 //		draw_set_halign(fa_center);
@@ -34,7 +25,7 @@ switch(room){
 	case rm_gameover:
 		draw_set_halign(fa_center);
 		var c = c_red;		
-		draw_text_transformed_color(room_width/2, 250, "GAME OVER, BITCH!", 5, 5, 0, c,c,c,c,1 );
+		draw_text_transformed_color(room_width/2, 250, "GAME OVER", 5, 5, 0, c,c,c,c,1 );
 		draw_set_valign(fa_middle);
 		draw_text_transformed(room_width/2, 350,"FINAL SCORE: "+string(score), 2, 2, image_angle);		
 		draw_text_transformed(room_width/2, 450,">> PRESS ENTER TO RESTART <<", 2, 2, image_angle);
