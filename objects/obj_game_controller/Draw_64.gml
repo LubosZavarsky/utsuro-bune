@@ -1,4 +1,7 @@
 if room == rm_game {
+	
+		draw_set_halign(fa_left);
+		draw_set_valign(fa_top);
 		draw_text(90,218,"SCORE: "+string(score));		
 		//draw_text(20,40,"LIVES: "+string(lives));
 		

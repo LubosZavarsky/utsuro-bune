@@ -1,12 +1,17 @@
 // Stop loops from previous rooms - stops ALL sounds before going to final room... 
 //audio_stop_all();
 
+//if (room == rm_start) {
+
+//	if  !audio_is_playing(snd_start) audio_play_sound(snd_start, 1, true);
+	
+//}
+
+
 switch (room) {
 	case rm_start:
-		audio_stop_all();	
-		if (os_browser == browser_not_a_browser) {
-			audio_play_sound(snd_start, 2, true);
-		}		
+		audio_stop_all();		
+		if !audio_is_playing(snd_start) audio_play_sound(snd_start, 2, true);		
 		break;
 	
 	case rm_game:

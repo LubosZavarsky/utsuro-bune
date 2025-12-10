@@ -51,7 +51,7 @@ if (!is_dead) {
 	if (keyboard_check_pressed(ord("X"))) {
 	
 			if (!instance_exists(obj_beam_good)) {
-			//audio_play_sound(snd_beam, 1, false);
+			if !audio_is_playing(snd_beam) audio_play_sound(snd_beam, 1, false);
 			instance_create_layer(x, y, "ufo_layer", obj_beam_good);
 		
 		}
@@ -61,7 +61,7 @@ if (!is_dead) {
 	if (keyboard_check_pressed(ord("C"))) {
 	
 			if (!instance_exists(obj_beam_bad)) {
-			//audio_play_sound(snd_beam, 1, false);
+			if !audio_is_playing(snd_beam) audio_play_sound(snd_beam, 1, false);
 			instance_create_layer(x, y, "ufo_layer", obj_beam_bad);
 		
 		}
